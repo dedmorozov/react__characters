@@ -1,0 +1,49 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000020;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  min-height: 500px;
+  padding: 30px 50px;
+  background-color: #fff;
+
+  &__header {
+    position: relative;
+  }
+
+  &__close {
+    position: absolute;
+    top: -12px;
+    right: 0;
+    border: 0;
+    background-color: transparent;
+    width: 72px;
+    height: 72px;
+    font-size: 36px;
+    line-height: 72px;
+    color: rgb(233, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+    
+    &:hover {
+      color: rgb(255, 0, 0);
+      transform: scale(1.05);
+    }
+  }
+
+  &__body {
+    width: 100%;
+  }
+}

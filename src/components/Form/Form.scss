@@ -1,0 +1,38 @@
+.form {
+  padding: 20px 0;
+
+  &__heading {
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    font-family: inherit;
+    border-radius: 3px;
+    border: 1px solid #f1f1f1;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+
+    &:focus {
+      background-color: #f1f1f135;
+    }
+  }
+
+  &__button {
+    min-width: 250px;
+    padding: 10px 0;
+    background-color: #6bec2f;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: #00ff00;
+    }
+
+    &:active {
+      transform: scale(0.9);
+      transition: 0.1s;
+    }
+  }
+}
